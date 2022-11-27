@@ -89,9 +89,28 @@ var upperCasedCharacters = [
 ];
 
 // Function to prompt user for password options
-function getPasswordOptions() {
+function getPasswordOptions() {  let length = prompt("How long do you want your password to be\n Password should not be less than 8 or more than 32 characters");
+
+let upperCasedCharacters = "do you want uppercase letters?"
+let lowerCasedCharacters = "do you want lowercase letters?"
+let specialCharacters = "do you want special character?"
+let numericCharacters = "do you want numeric characters?"
+
+if (length > 8 && length < 32){
+   alert (`Your password length would be ${length}`)
 
 }
+ else {
+  alert (getPasswordOptions())
+ }
+
+ confirm (upperCasedCharacters);
+ confirm (lowerCasedCharacters);
+ confirm (specialCharacters); 
+ confirm (numericCharacters);
+}
+
+console.log(getPasswordOptions())
 
 // Function for getting a random element from an array
 function getRandom(arr) {
